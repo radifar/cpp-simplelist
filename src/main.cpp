@@ -4,10 +4,9 @@
 
 #include "include/list.hpp"
 
-
 int main(int arg_count, char *args[])
 {
-    if( arg_count > 1)
+    if (arg_count > 1)
     {
         List simpleList;
         simpleList.name = std::string(args[1]);
@@ -17,7 +16,6 @@ int main(int arg_count, char *args[])
     {
         std::cout << "Username not supplied.. exiting the program" << std::endl;
     }
-    
 
     return 0;
 }

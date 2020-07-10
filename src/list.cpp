@@ -13,19 +13,19 @@ void List::print_menu()
 
     std::cin >> choice;
 
-    if ( choice == 4 )
+    if (choice == 4)
     {
         exit(0);
     }
-    else if ( choice == 2)
+    else if (choice == 2)
     {
         add_item();
     }
-    else if ( choice == 3)
+    else if (choice == 3)
     {
         delete_item();
     }
-    else if ( choice == 1)
+    else if (choice == 1)
     {
         print_list();
     }
@@ -33,7 +33,6 @@ void List::print_menu()
     {
         std::cout << "\nSorry choice not implemented yet\n";
     }
-    
 }
 
 void List::add_item()
@@ -44,7 +43,7 @@ void List::add_item()
 
     std::string item;
     std::cin >> item;
-//    std::getline(std::cin, item);
+    //    std::getline(std::cin, item);
 
     list.push_back(item);
 
