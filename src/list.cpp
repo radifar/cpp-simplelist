@@ -15,7 +15,7 @@ void List::print_menu()
 
     if (choice == 4)
     {
-        exit(0);
+        return;
     }
     else if (choice == 2)
     {
@@ -43,7 +43,7 @@ void List::add_item()
 
     std::string item;
     std::cin >> item;
-    //    std::getline(std::cin, item);
+    //    std::getline(std::cin, item, '\n');
 
     list.push_back(item);
 

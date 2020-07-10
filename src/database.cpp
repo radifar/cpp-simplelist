@@ -1,12 +1,15 @@
 #include "include/database.hpp"
 
-void Database::write()
+void Database::write(std::vector<std::string> list)
 {
     std::ofstream db;
     db.open("db/lists.sldb");
     if (db.is_open())
     {
-        db << "1\n2\n3\n4\n5\n";
+        for (int list_index = 0; list_index < (int)list.size(); list_index++)
+        {
+            db << " * " << list[list_index] << "\n";
+        }
     }
     else
     {
