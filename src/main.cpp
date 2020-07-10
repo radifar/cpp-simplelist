@@ -3,6 +3,7 @@
 #include <string>
 
 #include "include/list.hpp"
+#include "include/database.hpp"
 
 int main(int arg_count, char *args[])
 {
@@ -16,6 +17,10 @@ int main(int arg_count, char *args[])
     {
         std::cout << "Username not supplied.. exiting the program" << std::endl;
     }
+
+    Database data;
+    data.write();
+    data.read();
 
     return 0;
 }
